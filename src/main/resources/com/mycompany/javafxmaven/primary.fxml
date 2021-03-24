@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="536.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.javafxmaven.PrimaryController">
+   <children>
+      <TextField fx:id="mouse" editable="false" layoutX="71.0" layoutY="64.0" />
+      <TextField fx:id="usb" editable="false" layoutX="71.0" layoutY="121.0" />
+      <TextField fx:id="charger" editable="false" layoutX="71.0" layoutY="174.0" />
+      <CheckBox fx:id="mouseC" layoutX="300.0" layoutY="68.0" mnemonicParsing="false" onAction="#enMouse" text="Mouse @ $10 each" />
+      <CheckBox fx:id="usbC" layoutX="300.0" layoutY="125.0" mnemonicParsing="false" onAction="#enUsb" text="USB @ $20 each" />
+      <CheckBox fx:id="chargerC" layoutX="300.0" layoutY="178.0" mnemonicParsing="false" onAction="#enCharger" text="Charger @ $15 each" />
+      <Text layoutX="71.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subtract Discount" wrappingWidth="171.0" />
+      <TextField fx:id="discount" layoutX="300.0" layoutY="219.0" />
+      <Button fx:id="total" layoutX="71.0" layoutY="273.0" mnemonicParsing="false" onAction="#total" text="TOTAL" />
+      <Button fx:id="reset" layoutX="157.0" layoutY="273.0" mnemonicParsing="false" onAction="#reset" text="RESET" />
+      <Button fx:id="exit" layoutX="242.0" layoutY="273.0" mnemonicParsing="false" onAction="#exit" text="EXIT" />
+      <Text fx:id="output" boundsType="LOGICAL_VERTICAL_CENTER" layoutX="59.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="418.0" AnchorPane.bottomAnchor="141.0" />
+   </children>
+</AnchorPane>
